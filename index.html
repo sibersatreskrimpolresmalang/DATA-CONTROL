@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PILUN Generator — Satreskrim Polres Malang</title>
+<meta name="description" content="Aplikasi PILUN Generator Satreskrim Polres Malang">
 
+<!-- ============================================================
+GANTI baris di bawah ini dengan URL web app Apps Script Anda
+(yang diakhiri /exec). Cukup ubah nilai TARGET_URL saja.
+============================================================ -->
+<script>
+var TARGET_URL = "https://script.google.com/macros/s/AKfycbxKDeC-xCQqxDCAvW5AnY-T3vRKHairoWUxmLO3wbbVH3cMfsOK485c37bjLqar-7vz/exec";
+// Teruskan parameter (?nomor=123 dll) bila ada
+if (window.location.search) TARGET_URL += window.location.search;
+window.location.replace(TARGET_URL);
+</script>
+
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+background:#0b2e6b;color:#fff;display:flex;align-items:center;
+justify-content:center;height:100vh;margin:0;text-align:center}
+.box{max-width:420px;padding:24px}
+.spin{width:34px;height:34px;border:4px solid rgba(255,255,255,.25);
+border-top-color:#fff;border-radius:50%;animation:sp 1s linear infinite;
+margin:0 auto 18px}
+@keyframes sp{to{transform:rotate(360deg)}}
+a{color:#ffd54f}
+</style>
+</head>
+<body>
+<div class="box">
+<div class="spin"></div>
+<h2>Membuka PILUN Generator…</h2>
+<p>Jika Halaman tidak terbuka otomatis,
+<a id="manual" href="#">klik di sini</a>.</p>
+</div>
+<script>document.getElementById('manual').href = TARGET_URL;</script>
+</body>
+</html>
